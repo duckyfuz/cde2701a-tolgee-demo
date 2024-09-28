@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400');
+
+:root * {
+  box-sizing: border-box;
+}
+
+:root *:focus {
+  outline-offset: 3px;
+  outline-color: rgb(84, 84, 84);
+}
+
+:root {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+:root::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-color: #4a3172;
+}
+
+.lang-selector {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.51);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 8px 18px 8px 12px;
+  margin: 16px 0px;
+  font-size: 16px;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  width: 110px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6L8 10L12 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 8px);
+  background-position-y: 9px;
+}
+
+header {
+  display: grid;
+  margin-bottom: 20px;
+  margin-top: 8px;
+  color: white;
+  justify-items: center;
+}
+
+header h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 48px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.translation-methods {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100%;
+}
+
+.translation-methods .tiles {
+  margin: 50px auto 0;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  color: black;
+}
+
+.translation-methods .tiles > div {
+  background-color: #ffffffcc;
+  backdrop-filter: blur(8px);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  min-height: 120px;
+  gap: 10px;
+}
+
+.translation-methods .tiles > div > div {
+  text-align: center;
+}
+
+.translation-methods h1 {
+  padding: 0;
+  margin: 0;
+  color: #1f385b;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.load-more-section {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.translation-methods .section-title {
+  position: relative;
+  top: 30px;
+  color: white;
+}
+
+.translation-methods .section-title {
+  position: relative;
+  top: 30px;
+  color: white;
+}
